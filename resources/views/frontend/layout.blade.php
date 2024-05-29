@@ -60,16 +60,16 @@
                     <nav>
                       <ul id="navigation">
                         <li>
-                          <a class="active" href="index.html">home</a>
+                          <a class="active" href="/">home</a>
                         </li>
                         <li>
-                          <a href="about.html">About</a>
+                          <a href="about">About</a>
                         </li>
                         <li>
-                          <a href="travel_destination.html">Destination</a>
+                          <a href="destination">Destination</a>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <a href="contact">Contact</a>
                         </li>
                       </ul>
                     </nav>

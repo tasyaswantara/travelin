@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');
-});
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', function () {
     return view('frontend.about');
 });
+Route::get('/destination/{destination:city}', [\App\Http\Controllers\DetailController::class, 'show'])->name('destination.show');
+ 
 Route::get('/destination', function () {
     return view('frontend.destination.index');
 });
@@ -29,7 +29,7 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 });
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -40,4 +40,7 @@ Route::group(['middleware' => 'isAdmin','prefix' => 'admin', 'as' => 'admin.'], 
     Route::resource('users', \App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::resource('destinations', \App\Http\Controllers\Admin\DestinationController::class);
+    Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
+    Route::resource('testimonials', \App\Http\Controllers\Admin\TestimonialController::class);
 });
