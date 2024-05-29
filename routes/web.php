@@ -28,7 +28,7 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 });
 
-// Auth::routes();
+Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

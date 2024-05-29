@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Admin Travelin') }}</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -53,13 +53,13 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #a02e32;">
         <!-- Brand Logo -->
-        <a href="/" class="brand-link">
-            <img src="{{ asset('images/AdminLTELogo.png') }}" alt="AdminLTE Logo"
+        <a href="/" class="brand-link" style="font-weight: 900; text-align:center;">
+            <!-- <img src="{{ asset('images/Travelin.png') }}" alt="AdminLTE Logo"
                  class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">AdminLTE 3</span>
+                 style="opacity: .8"> -->
+            <h1 class="brand-text font-weight-light" >Travelin</h1>
         </a>
 
         @include('layouts.navigation')

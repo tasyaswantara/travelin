@@ -1,8 +1,8 @@
 @extends('layouts.guest')
 
 @section('content')
-    <div class="card-body login-card-body">
-        <p class="login-box-msg">{{ __('Login') }}</p>
+    <div class="card-body login-card-body" style=" height:30vh;">
+        <!-- <p class="login-box-msg">{{ __('Login') }}</p> -->
 
         <form action="{{ route('login') }}" method="post">
             @csrf
@@ -36,26 +36,26 @@
             </div>
 
             <div class="row">
-                <div class="col-8">
+                <!-- <div class="col-8">
                     <div class="icheck-primary">
                         <input type="checkbox" id="remember" name="remember">
                         <label for="remember">
                             {{ __('Remember Me') }}
                         </label>
                     </div>
-                </div>
+                </div> -->
                 <!-- /.col -->
                 <div class="col-4">
-                    <button type="submit" class="btn btn-primary btn-block">{{ __('Login') }}</button>
+                    <button type="submit" class="btn  btn-block" style="background-color: #ed454b; color:white; font-weight:700;">{{ __('Login') }}</button>
                 </div>
                 <!-- /.col -->
             </div>
         </form>
 
         @if (Route::has('password.request'))
-            <p class="mb-1">
+            <!-- <p class="mb-1">
                 <a href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}</a>
-            </p>
+            </p> -->
         @endif
     </div>
     <!-- /.login-card-body -->

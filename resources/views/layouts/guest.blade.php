@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
+    <title>Login Travelin Admin</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -15,10 +16,11 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <a href="/">{{ config('app.name', 'Laravel') }}</a>
+<body class="hold-transition login-page" style="background-color: white;">
+<div class="login-box" style=" width: 40vw;">
+    <div class="login-logo" style="font-weight: 900;">
+        <img src="{{ asset('images/Travelin.png') }}" alt="">
+        <!-- <a href="/">{{ config('app.name', 'Laravel') }}</a> -->
     </div>
     <!-- /.login-logo -->
     <div class="card">

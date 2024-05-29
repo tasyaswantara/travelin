@@ -50,8 +50,8 @@
               <div class="row align-items-center">
                 <div class="col-xl-2 col-lg-2">
                   <div class="logo">
-                    <a href="index.html">
-                      <img src="img/logo.png" alt="" />
+                    <a href="/">
+                      <img src="{{ asset('images/Travelin.png') }}" width="100px" alt="" />
                     </a>
                   </div>
                 </div>
