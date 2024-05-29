@@ -14,14 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/destination', [\App\Http\Controllers\DestinationController::class, 'index'])->name('destination');
 Route::get('/about', function () {
     return view('frontend.about');
 });
 Route::get('/destination/{destination:city}', [\App\Http\Controllers\DetailController::class, 'show'])->name('destination.show');
  
-Route::get('/destination', function () {
-    return view('frontend.destination.index');
-});
+
 Route::get('/destination/detail', function () {
     return view('frontend.destination.detail');
 });
