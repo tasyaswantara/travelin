@@ -63,13 +63,13 @@
                           <a class="active" href="/">home</a>
                         </li>
                         <li>
-                          <a href="about">About</a>
+                          <a href="/about">About</a>
                         </li>
                         <li>
-                          <a href="destination">Destination</a>
+                          <a href="/destination">Destination</a>
                         </li>
                         <li>
-                          <a href="contact">Contact</a>
+                          <a href="/contact">Contact</a>
                         </li>
                       </ul>
                     </nav>
@@ -109,17 +109,13 @@
 
 @yield('content')
 
-    <footer class="footer">
-      <div class="footer_top">
+    <footer class=" footer" style="height:60vh; background-color:black; display:flex; flex-direction:column; justify-content:center;">
+      <div class="">
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-md-6 col-lg-4">
               <div class="footer_widget">
-                <div class="footer_logo">
-                  <a href="#">
-                    <img src="img/footer_logo.png" alt="" />
-                  </a>
-                </div>
+                
                 <h3 style="color:white;">Travelin</h3>
                 <p>
                 Jl. Veteran Malang No. 123<br />

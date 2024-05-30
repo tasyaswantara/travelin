@@ -8,6 +8,15 @@
         "src": "/(.*)",
         "dest": "/api/index.php"
     }],
+    "builds": [
+        {
+          "src": "api/index.php",
+          "use": "@vercel/php",
+          "config": {
+            "buildCommand": "apt-get update && apt-get install -y openssl && composer install"
+          }
+        }
+      ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",

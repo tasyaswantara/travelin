@@ -25,11 +25,11 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="single_place">
                                 <div class="thumb">
-                                    <img src="{{ Storage::url( $destination->image)}}" alt="">
+                                    <img src="{{ Storage::url( $destination->image)}}" alt="" style="max-height: 200px;">
                                     <a href="{{ route('destination.show', $destination->city) }}" class="prise">{{ $destination -> price}}</a>
                                 </div>
                                 <div class="place_info">
-                                    <a href="destination_details.html"><h3>{{ $destination->city}}</h3></a>
+                                    <a href="{{ route('destination.show', $destination->city) }}"><h3>{{ $destination->city}}</h3></a>
                                     <p>{{ $destination->province}}</p>
                                     <div class="rating_days d-flex justify-content-between">
                                         <div class="days">
