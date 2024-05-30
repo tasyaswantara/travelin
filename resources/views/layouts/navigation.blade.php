@@ -13,7 +13,7 @@
             data-accordion="false">
 
             @can('user_management_access')
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-cogs nav-icon"></i>
                         <p>
@@ -28,7 +28,7 @@
                             <a class="nav-link {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}" href="{{ route('admin.users.index') }}"> <i class="fa fa-user mr-2"></i> {{ __('Users') }}</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             @endcan
 
             <li class="nav-item">
@@ -39,14 +39,14 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a href="{{ route('admin.sliders.index') }}" class="nav-link">
                     <i class="nav-icon fa fa-book"></i>
                     <p>
                         {{ __('Sliders') }}
                     </p>
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a href="{{ route('admin.destinations.index') }}" class="nav-link">
                     <i class="nav-icon fa fa-book"></i>

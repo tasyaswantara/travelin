@@ -34,12 +34,12 @@ Auth::routes();
 
 Route::group(['middleware' => 'isAdmin','prefix' => 'admin', 'as' => 'admin.'], function() {
     Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard.index');
+    Route::resource('destinations', \App\Http\Controllers\Admin\DestinationController::class);
+    Route::resource('testimonials', \App\Http\Controllers\Admin\TestimonialController::class);
+    Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
     Route::resource('permissions', \App\Http\Controllers\Admin\PermissionController::class);
     Route::resource('roles', \App\Http\Controllers\Admin\RoleController::class);
     Route::resource('users', \App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
-    Route::resource('destinations', \App\Http\Controllers\Admin\DestinationController::class);
-    Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
-    Route::resource('testimonials', \App\Http\Controllers\Admin\TestimonialController::class);
 });

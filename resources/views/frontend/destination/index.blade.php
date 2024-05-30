@@ -8,7 +8,7 @@
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
                         <h3>Destinations</h3>
-                        <p>Pixel perfect design with awesome contents</p>
+                        <p>Menawarkan keindahan yang memikat dan petualangan tak <br> terbatas di setiap sudut dunia.</p>
                     </div>
                 </div>
             </div>

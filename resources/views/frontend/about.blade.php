@@ -1,13 +1,13 @@
 @extends('frontend.layout')
 
 @section('content')
-<div class="bradcam_area bradcam_bg_3">
+<div class="bradcam_area" style="background-image: url('images/about us.svg'); height:80vh;">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
             <div class="bradcam_text text-center">
               <h3>About Us</h3>
-              <p>Pixel perfect design with awesome contents</p>
+              <p >Dedikasi kami adalah mengubah setiap perjalanan Anda menjadi <br> petualangan yang luar biasa dan penuh kenangan.</p>
             </div>
           </div>
         </div>
@@ -26,24 +26,16 @@
               <div class="col-lg-11 offset-lg-1">
                 <div class="story_info">
                   <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-9" style="text-align: justify;">
                       <p>
-                        Consulting represents success at realizing the company
-                        is going in the wrong direction. The only time the
-                        company fails is when it is not possible to do a
-                        turnaround anymore. We help companies pivot into more
-                        profitable directions where they can expand and grow. It
-                        is inevitable that companies will end up making a few
-                        mistakes; we help them correct these mistakes.
+                      Berawal dari mimpi untuk menjelajahi dunia dan membuka cakrawala baru, perusahaan travel kami didirikan oleh sekelompok petualang sejati yang bersemangat tentang perjalanan. Dengan latar belakang yang beragam dan pengalaman di berbagai belahan dunia, kami bersatu dengan satu tujuan: memberikan pengalaman perjalanan yang tak terlupakan bagi setiap pelanggan kami. Sejak hari pertama, kami berkomitmen untuk menciptakan momen-momen berharga yang melekat di hati.
                       </p>
                       <p>
-                        Consulting represents success at realizing the company
-                        is going in the wrong direction. The only time the
-                        company fails is when it is not possible to do a
-                        turnaround anymore. We help companies pivot into more
-                        profitable directions where they can expand and grow. It
-                        is inevitable that companies will end up making a few
-                        mistakes; we help them correct these mistakes.
+                      Kami percaya bahwa setiap perjalanan adalah sebuah cerita yang layak untuk diceritakan. Dengan semangat inilah kami merancang setiap paket wisata dengan teliti, memastikan bahwa setiap detail dipikirkan dengan seksama. Dari pemilihan destinasi yang memukau hingga penyediaan akomodasi terbaik dan pengalaman lokal yang otentik, kami selalu berusaha memberikan yang terbaik bagi pelanggan kami. Kami tidak hanya menjual tiket dan paket perjalanan; kami menciptakan kenangan yang abadi.
+
+                      </p>
+                      <p>
+                      Perjalanan kami tidak selalu mulus. Kami menghadapi berbagai tantangan di sepanjang jalan, dari perubahan tren wisata hingga situasi global yang mempengaruhi industri perjalanan. Namun, dengan ketekunan dan inovasi, kami selalu bangkit dan beradaptasi. Kami terus belajar dan berinovasi, memastikan bahwa kami tetap relevan dan mampu memenuhi kebutuhan pelanggan yang terus berkembang. Dukungan dan kepercayaan dari pelanggan setia kami menjadi sumber motivasi terbesar dalam menghadapi setiap tantangan.
                       </p>
                     </div>
                   </div>

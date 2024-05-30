@@ -42,8 +42,8 @@
           </div>
         </div>
         <div class="row">
-        @foreach( $destinations as $destination)
-          <div class="col-lg-4 col-md-6">
+        @foreach($destinations->take(3) as $destination)
+          <div class="col-lg-4 col-md-6" style="cursor: pointer;">
             <div class="single_place">
               <div class="thumb">
                 <img src="{{ Storage::url( $destination->image)}}" width="300" alt="" />
@@ -63,6 +63,10 @@
           </div>
          @endforeach
         </div>
+        <div style="width: 100%; display:flex; justify-content:center; align-items: center;">
+        <a href="/destination" style="text-align: center; margin-top:50px; cursor:pointer;">See More..</a>
+        </div>
+        
       </div>
     </div>
     <!-- end -->
@@ -72,8 +76,8 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="single_travel text-center">
-              <div class="icon">
-                <img src="img/svg_icon/1.svg" alt="" />
+              <div class="icon" style="height: 180px;">
+                <img src="{{ asset('images/aset1.png') }}" alt="" />
               </div>
               <h3>Comfortable Journey</h3>
               <p>
@@ -85,7 +89,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="single_travel text-center">
               <div class="icon">
-                <img src="img/svg_icon/2.svg" alt="" />
+                <img src="{{ asset('images/aset2.png') }}" alt="" />
               </div>
               <h3>Luxuries Hotel</h3>
               <p>
@@ -97,7 +101,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="single_travel text-center">
               <div class="icon">
-                <img src="img/svg_icon/3.svg" alt="" />
+                <img src="{{ asset('images/aset3.png') }}" alt="" />
               </div>
               <h3>Travel Guide</h3>
               <p>
@@ -122,7 +126,7 @@
                   <div class="col-lg-8">
                     <div class="single_testmonial text-center">
                       <div class="author_thumb">
-                        <img src="{{ Storage::url($testimonial->photo)}}" alt="" />
+                        <img src="{{ Storage::url($testimonial->photo)}}" alt="" style="width: 100px;" />
                       </div>
                       <p>
                         {{ $testimonial->title }}

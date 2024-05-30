@@ -2,13 +2,13 @@
 
 @section('content')
     <!-- bradcam_area  -->
-    <div class="bradcam_area bradcam_bg_4">
+    <div class="bradcam_area" style="background-image: url('images/contact bg.jpg'); height:80vh;">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
             <div class="bradcam_text text-center">
               <h3>contact</h3>
-              <p>Pixel perfect design with awesome contents</p>
+              <p>Kami siap mendengarkan setiap pertanyaan dan memberikan <br> bantuan yang Anda butuhkan untuk merencanakan petualangan <br> Anda berikutnya.</p>
             </div>
           </div>
         </div>
@@ -30,6 +30,7 @@
               method="post"
               id="contactForm"
               novalidate="novalidate"
+              style="width: 70vw;"
             >
               <div class="row">
                 <div class="col-12">
@@ -83,7 +84,7 @@
               </div>
             </form>
           </div>
-          <div class="col-lg-3 offset-lg-1">
+          <!-- <div class="col-lg-3 offset-lg-1">
             <div class="media contact-info">
               <span class="contact-info__icon"><i class="ti-home"></i></span>
               <div class="media-body">
@@ -105,7 +106,7 @@
                 <p>Send us your query anytime!</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
